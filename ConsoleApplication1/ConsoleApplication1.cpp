@@ -20,7 +20,7 @@ int Peterochka_array[10] = { 95, 63, 35, 250, 140, 45, 350, 42, 55, 65 };
 void product_list_Magnit()
 {
 	setlocale(LC_ALL, "ru");
-	cout << "\n1.сыр "<< M_chees
+	cout << "\n1.сыр " << M_chees
 		<< "\n2.молоко" << M_milk
 		<< "\n3.хлеб"<< M_bread
 		<<" \n4.креветки"<< M_crevet
