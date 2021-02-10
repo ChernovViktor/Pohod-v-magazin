@@ -17,6 +17,8 @@ int Lenta_array[10] = { 105, 60, 40, 400, 100,  55, 370, 35,  60,  80 };
 enum Peterochka_products { P_chees = 95, P_milk = 63, P_bread = 35, P_crevet = 250, P_riet = 140, P_rice = 45, P_losos = 350, P_danon = 42, P_kefir = 55, P_chocolate = 65 };
 int Peterochka_array[10] = { 95, 63, 35, 250, 140, 45, 350, 42, 55, 65 };
 
+int main();
+
 void product_list_Magnit()
 {
 	setlocale(LC_ALL, "ru");
@@ -204,6 +206,24 @@ void credit(int sum)
 	cout << "Ежемесячная плата составляет " << sum_end / 3 << " рублей в месяц\n";
 }
 
+void conec()
+{
+	int a = 0;
+	cout << "1)Закрыть программу\n2)Сходить в магазин еще раз\n";
+	cin >> a;
+	switch (a)
+	{
+	case 1:
+	{
+		system("cls");
+		cout << "До свидания!\n";
+		system("pause");
+		exit(0);
+	}
+	system("cls");
+	main();
+	}
+}
 
 
 
@@ -229,6 +249,7 @@ int main()
 		 show_check(sum, arr, Name, a);
 		 credit(sum);
 		 system("pause");
+		 conec();
 
 
 
@@ -246,6 +267,7 @@ int main()
 		 show_check(sum, arr, Name, a);
 		 credit(sum);
 		 system("pause");
+		 conec();
 
 	 }
 	 case 3:
@@ -261,7 +283,8 @@ int main()
 		 show_check(sum, arr, Name, a);
 		 credit(sum);
 		 system("pause");
-		 
+		 conec();
+
 	     
 
 	 }
